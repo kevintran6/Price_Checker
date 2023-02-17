@@ -1,0 +1,115 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Kevin's Website</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <script type="text/javascript" src="calculate.js"></script>
+    </head>
+
+    <body>
+      <ul class="nav">
+        <li id="navelements" class="logo">Profit Caclulator by Kevin Tran</li>
+
+        <img
+          id="navelements"
+          src="images/scexclusive.png"
+          alt="logo"
+          height="50"
+        />
+
+        <li id="navelements">
+          <a href="https://linkedin.com/in/kevin-tran-682320233/">Linkedin</a>
+        </li>
+        <li id="navelements">
+          <a href="https://www.instagram.com/kevinnn.tran/">Instagram</a>
+        </li>
+      </ul>
+    </body>
+
+    <p id="inputthings">
+      <input
+        placeholder="Enter Selling Price"
+        id="text"
+        class="input"
+        type="value"
+      />
+      <input type="checkbox" id="shoes" name="isShoe" value="Shoes" />
+      <label for="isShoe" id="shoes">Are they shoes?</label> <br /><br />
+      <button id="convertButton" onclick="onClick()">
+        Where should I sell?
+      </button>
+    </p>
+    <br />
+
+    <div id="featureCards" style="display: none">
+      <li id="card" class="card">
+        <br /><a>Best Selling Option</a> <br /><br />
+        <img
+          id="first_image"
+          alt="top image"
+          style="padding-top: 10px; max-height: 40px"
+        />
+        <br /><br /><br />
+        <a id="first"></a>
+      </li>
+
+      <li id="card" class="card">
+        <br /><a>Second Best Option</a> <br /><br />
+        <img
+          id="second_image"
+          alt="top image"
+          style="padding-top: 10px; max-height: 40px"
+        />
+        <br /><br /><br />
+        <a id="second"></a>
+      </li>
+
+      <li id="card" class="card">
+        <br /><a>Third Best Option</a> <br /><br />
+        <img
+          id="third_image"
+          alt="top image"
+          style="padding-top: 10px; max-height: 40px"
+        />
+        <br /><br /><br />
+        <a id="third"></a>
+      </li>
+
+      <li id="card" class="card">
+        <br /><a>Fourth Best Option</a> <br /><br />
+        <img
+          id="fourth_image"
+          alt="top image"
+          style="padding-top: 10px; max-height: 40px"
+        />
+        <br /><br /><br />
+        <a id="fourth"></a>
+      </li>
+
+      <li id="card" class="card">
+        <br /><a>Fifth Best Option</a> <br /><br />
+        <img
+          id="fifth_image"
+          alt="top image"
+          style="padding-top: 10px; max-height: 40px"
+        />
+        <br /><br /><br />
+        <a id="fifth"></a>
+      </li>
+    </div>
+  </html>
+
+  <script>
+    const myCheckbox = document.getElementById("shoes");
+    let isCheckboxChecked = false;
+    myCheckbox.addEventListener("change", function () {
+      if (this.checked) {
+        isCheckboxChecked = true;
+      } else {
+        isCheckboxChecked = false;
+      }
+    });
+  </script>
+</DOCTYPE>
